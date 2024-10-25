@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Ubuntu Mono', 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 700px;
+    padding: 50px;
+    flex: 0 0 auto;
+    gap: 10px;
+    background: #F4F4F4;
+}
+
+#display {
+    height: 100px;
+    border: 1px black solid;
+    background: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 50px;
+    font-size: 2em;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1;
+    gap: 10px;
+    height: 100%
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    flex-wrap: wrap;
+    justify-items: stretch;
+    gap: 5px;
+}
+
+.numbers div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 30%;
+    background: #D4D4A4;
+    font-size: 1.5em;
+}
+
+
+#zero {
+    flex: 1 0 60%;
+}
+
+#dot {
+    flex: 1;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5px;
+}
+
+#clear{
+    flex: 1;
+}
+
+.operators div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    background: #3f3f3f;
+    color: white;
+}
+
+#equal {
+    flex: 3;
+}
