@@ -21,6 +21,7 @@ body {
     gap: 20px;
     font-family: 'Ubuntu Mono', 'Courier New', Courier, monospace;
     font-size: 1.5em;
+    user-select: none;
 }
 
 #container {
@@ -32,6 +33,10 @@ body {
     flex: 0 0 auto;
     gap: 10px;
     background: #F4F4F4;
+}
+
+#container div {
+    border-radius: 12px;
 }
 
 #display {
@@ -57,7 +62,7 @@ body {
 .numbers {
     display: flex;
     flex-direction: row;
-    flex: 3;
+    flex: 5;
     flex-wrap: wrap;
     justify-items: stretch;
     gap: 5px;
@@ -72,6 +77,10 @@ body {
     font-size: 1.5em;
 }
 
+.numbers div:active {
+    background: #C3C3C3;
+}
+
 
 #zero {
     flex: 2 0;
@@ -84,23 +93,37 @@ body {
 .operators {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 2 0;
     gap: 5px;
-}
-
-#clear{
-    flex: 1;
+    flex-wrap: wrap;
 }
 
 .operators div{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 2;
+    flex: 3 0 auto;
     background: #3f3f3f;
     color: white;
 }
 
+div.deleters {
+    display: flex;
+    gap: 5px;
+    flex: 2;
+    background-color: unset;
+    align-items: stretch;
+}
+
 #equal {
-    flex: 3;
+    flex: 5;
+}
+
+.operators div:active {
+    background: #2e2e2e;
+    color: white;
+}
+
+div.deleters:active {
+    background: transparent;
 }
